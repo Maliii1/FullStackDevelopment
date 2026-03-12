@@ -1,0 +1,16 @@
+p{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular','';
+}
+
+h1{
+    font-family: 'Courier New', Courier, Lucida Sans Typewriter;
+}
+
+@font-face {
+    font-family: 'coder' ;
+    src: url(fonts/SemiCoderT.ttf);
+}
+
+h2{
+    font-family: "coder";
+}
