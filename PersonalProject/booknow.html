@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <h1>Travel Guide</h1>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="book.html" class="active">Book Now</a></li>
+            
+            
+        </ul>
+
+    </nav>
+</header>
+
+
+<section class="booking-page">
+
+    <h2>Book Your Trip</h2>
+    <p>Fill in the form below to plan your next adventure ✈️</p>
+
+    <form class="booking-form">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Destination</label>
+        <select required>
+            <option value="">Select a destination</option>
+            <option>Paris</option>
+            <option>London</option>
+            <option>New York</option>
+            <option>Tokyo</option>
+            <option>Dubai</option>
+            <option>Bali</option>
+            <option>Rome</option>
+            <option>Sydney</option>
+            <option>Barcelona</option>
+            <option>Istanbul</option>
+            <option>Cairo</option>
+            <option>Singapore</option>
+            <option>Amsterdam</option>
+            <option>Rio de jainero</option>
+            <option>Cape town</option>
+        </select>
+
+        <label>Departure Date</label>
+        <input type="text" placeholder="dd mm yyyy" required>
+
+        <label>Return Date</label>
+        <input ttype="text" placeholder="dd mm yyyy" required>
+
+        <label>Number of Travelers</label>
+        <input type="number" min="1" max="10" value="1" required>
+
+        <label>Additional Notes</label>
+        <textarea placeholder="Anything we should know?"></textarea>
+
+        <button type="submit">Book Now</button>
+
+    </form>
+
+</section>
+
+</body>
+</html>

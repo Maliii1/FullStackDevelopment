@@ -1,0 +1,453 @@
+body { 
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #8fceff;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background: #4da6ff;
+
+    border: 2px solid black;
+    border-radius: 30px;
+
+    margin: 15px;
+
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    transition: transform 0.3s ease;
+}
+
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+.logo img {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover h1 {
+    color: rgb(104, 40, 231);
+}
+
+
+.navbar h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: rgb(135, 105, 195);
+}
+
+.navbar :hover{
+    transform: scale(1.05);
+}
+
+
+.home {
+    height: 600px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 100%),
+
+    url("../images/beach.webp")
+    center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: rgb(22, 46, 71);
+
+    font-weight: bold;
+}
+
+.home-content h2 {
+    font-size: 3rem;
+}
+
+.home-content p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 45px;
+
+    background: black;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 50px;
+
+    background: #e0dced;
+}
+
+.feature {
+    text-align: center;
+    max-width: 250px;
+}
+
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #111;
+    color: white;
+}
+
+
+.page {
+    padding: 40px;
+
+    background:
+    linear-gradient(
+    rgba(255,255,255,0.85),
+    rgba(255,255,255,0.95)),
+
+    url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Beach_in_Mauritius.jpg")
+    center/cover no-repeat;
+}
+
+
+.page h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+
+.place {
+    background: white;
+
+    display: grid;
+
+    /* fully responsive columns */
+    grid-template-columns: minmax(250px, 1.2fr) minmax(300px, 2fr) minmax(200px, 1fr);
+
+    margin-bottom: 40px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.place img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text-box {
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box h3 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 21px;
+}
+
+
+.price-box {
+    background: #ececec;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 35px;
+}
+
+.price-box h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #005fcc;
+}
+
+.price-box p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.next-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .home-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .text-box h3 {
+        font-size: 32px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .price-box h3 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home {
+        height: 450px;
+    }
+
+    .home-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+  .place {
+    grid-template-columns: 100%;
+}
+
+    .page {
+        padding: 20px;
+    }
+}
+
+.about-page {
+    padding: 50px;
+    background:
+    linear-gradient(rgba(189, 183, 214, 0.9), rgba(255,255,255,0.95)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80")
+    center/cover no-repeat;
+}
+
+.about-main {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-main h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.about-main p {
+    font-size: 20px;
+    color: #444;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-box {
+    background: rgb(238, 227, 227);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-8px);
+}
+
+.about-box h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #005fcc;
+}
+
+.about-box p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h2 {
+        font-size: 35px;
+    }
+}
+
+.booking-page {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80");
+    
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+
+    color: white;
+     background-repeat: no-repeat;
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.booking-form button {
+    background: #0077ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #005fcc;
+}
+
+
+@media (max-width: 600px) {
+    .booking-page {
+        padding: 30px 15px;
+        background-attachment: scroll;
+    }
+
+    .booking-form {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+}
