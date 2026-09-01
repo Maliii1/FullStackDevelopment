@@ -1,29 +1,25 @@
-console.log("Goodbye");
+function printName(){
+    var teksti = document.getElementById("text");
 
+    teksti.innerHTML = "Hello<br>";
 
-var x = 10;
+    setTimeout(function(){
+        teksti.innerHTML += "Good morning<br>";
+    }, 3000);
 
-var_value = "Digital School";
+    teksti.innerHTML += "Goodnight<br>";
+}
 
-//var 123 = 55; //wrong way
+printName();
 
+var colors = ["red","green","blue","yellow","purple"];
 
+function changeTextColor(){
+    document.getElementById("text").style.color = colors[Math.floor(Math.random() * colors.length)];
+} 
+setInterval(changeTextColor, 2000);
 
-//1.   Numbers: 5, 6.5, 7, etc.
-
-//2.    String: “Hello GeeksforGeeks” etc.
-
-//3.    Boolean: Represent a logical entity and can have two values: true or false.
-
-//4.    Null: This type has only one value: null.
-
-//5.    Undefined: A variable that has not been assigned a value is undefined.
-
-//6.    Object: It is the most important data type and forms the building blocks for modern JavaScript.
-
-
-//The name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.
-
-// After the first letter we can use digits (0 to 9), for example, value1.
-
-//  JavaScript variables are case sensitive, for example, x and X are different variables. 
+function changeBgColor(){
+    document.querySelector('body').style.background = colors[Math.floor(Math.random() * colors.length)];
+}
+setInterval(changeBgColor, 2000);
