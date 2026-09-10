@@ -1,0 +1,79 @@
+
+body{
+    background-color:#321E48 ;
+}
+.card{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(144, 115, 198);
+    margin: 5px;
+}
+
+.card p{
+    color: #dddddd;
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+}
+
+.card button{
+    background : #0a0f13 ;
+    color: #c0b9b9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.secondstation{
+    background-color: #65DCD5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+
+.djatht{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+  
+}
+
+.djatht input{
+    margin: 5px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding:10px;
+    border:2px solid green;
+    border-radius: 5px;
+    width: 350px;
+    height: 200px;
+    margin-left: 550px;
+    background-color: #76c457;
+}
+
+.calculator input{
+    margin: 5px;
+    background-color: #fff8cf;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
